@@ -1,0 +1,182 @@
+/* 1. Tag Selectors */
+body {
+    background-color: #0b5394;
+    color: #ffffff;
+    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    position: relative;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* 2. Class Selectors */
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+}
+
+.cell {
+    padding: 40px;
+}
+
+.top-left {
+    border-right: 1px dashed rgba(255, 255, 255, 0.7);
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.7);
+}
+
+.top-right {
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.7);
+}
+
+.bottom-left {
+    border-right: 1px dashed rgba(255, 255, 255, 0.7);
+}
+
+.name {
+    font-size: 52px;
+    line-height: 1.1;
+    font-weight: 800;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.job-title {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.divider {
+    border: none;
+    height: 4px;
+    background-color: #ff7a59;
+    width: 65px;
+    margin: 0;
+}
+
+.resume-section {
+    margin-bottom: 40px;
+}
+
+.entry strong {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.subtext {
+    display: block;
+    font-size: 13px;
+    margin-bottom: 12px;
+    opacity: 0.9;
+}
+
+.mb-l {
+    margin-bottom: 30px;
+}
+
+.skills-list {
+    list-style-type: none;
+}
+
+.decorations {
+    position: absolute;
+    top: -50px;
+    right: -100px;
+    width: 600px;
+    height: 600px;
+    z-index: 0;
+    opacity: 0.8;
+    pointer-events: none;
+}
+
+/* 3. ID Selectors */
+#resume-container {
+    width: 100%;
+    max-width: 900px;
+    border: 1px dashed rgba(255, 255, 255, 0.7);
+    position: relative;
+    z-index: 1;
+    background-color: transparent;
+}
+
+#skills-section {
+    padding-left: 10px;
+    border-left: 3px solid rgba(255, 255, 255, 0.2);
+}
+
+/* 4. Attribute Selectors */
+[data-section="education"] h3 {
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+a[href^="mailto:"] {
+    color: #ffffff;
+    text-decoration: none;
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.6);
+    word-break: break-all;
+}
+
+/* 5. Pseudo-classes */
+a[href^="mailto:"]:hover {
+    color: #ff7a59;
+    border-bottom-color: #ff7a59;
+}
+
+.skills-list li:nth-child(even) {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.skills-list li:nth-child(odd) {
+    font-weight: bold;
+}
+
+.resume-section:last-child {
+    margin-bottom: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .grid-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .top-left,
+    .top-right,
+    .bottom-left {
+        border: none;
+        border-bottom: 1px dashed rgba(255, 255, 255, 0.7);
+    }
+
+    .top-right {
+        display: none;
+    }
+}

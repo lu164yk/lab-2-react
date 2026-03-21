@@ -1,79 +1,82 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="uk">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Моє Резюме</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-  <header>
-    <h1>Любомир Левицький</h1>
-    <p>Студент | Веб-розробник початківець | Шахіст/Тренер з шахів</p>
-  </header>
 
-  <main>
-    <section>
-      <h2>Про мене</h2>
-      <p>
-        Я студент 3-го курсу кафедри кібербезпеки. Поєдную навчання з
-        професійною грою в шахи та викладанням. Маю звання Кандидата у майстри
-        спорту (КМС).
-      </p>
-    </section>
+  <div id="resume-container">
+    <div class="grid-wrapper">
+      <header class="cell top-left">
+        <h1 class="name">ЛЮБОМИР<br>ЛЕВИЦЬКИЙ</h1>
+        <h2 class="job-title">Студент | Шахіст</h2>
+        <hr class="divider">
+      </header>
 
-    <section>
-      <h2>Шахова кар'єра</h2>
-      <ul>
-        <li><strong>Кандидат у майстри спорту (КМС) з шахів</strong></li>
-        <li>Шаховий тренер (онлайн та офлайн)</li>
-        <li>Учасник та призер міжнародних турнірів</li>
-      </ul>
-    </section>
+      <div class="cell top-right"></div>
 
-    <section>
-      <h2>Освіта</h2>
-      <ul>
-        <li>
-          Національний університет "Львівська політехніка" (2023 - теперішній
-          час)
-        </li>
-      </ul>
-    </section>
+      <aside class="cell bottom-left">
+        <section class="resume-section">
+          <h3>Про мене</h3>
+          <p>
+            Я студент 3-го курсу кафедри кібербезпеки. Поєдную навчання з
+            професійною грою в шахи та викладанням. Маю звання Кандидата у майстри
+            спорту (КМС).
+          </p>
+        </section>
 
-    <section>
-      <h2>Досвід</h2>
-      <ul>
-        <li>
-          Я — кандидат у майстри спорту з шахів 🏅 та шаховий тренер з досвідом викладання.
-          З 2018 року граю на міжнародному рівні, брав участь у численних турнірах у класичних шахах, рапіді та бліці.
-        </li>
-      </ul>
-    </section>
+        <section class="resume-section" data-section="education">
+          <h3>Освіта</h3>
+          <div class="entry">
+            <strong>Національний університет "Львівська політехніка"</strong>
+            <span class="subtext">2023 - теперішній час</span>
+          </div>
+        </section>
 
-    <section>
-      <h2>Навички</h2>
-      <ul>
-        <li>HTML5 / CSS3</li>
-        <li>Основи JavaScript</li>
-        <li>Git / GitHub</li>
-        <li>Python</li>
-      </ul>
-    </section>
+        <section class="resume-section" id="skills-section">
+          <h3>Навички</h3>
+          <ul class="skills-list">
+            <li>HTML5 / CSS3</li>
+            <li>Основи JavaScript</li>
+            <li>Git / GitHub</li>
+            <li>Python</li>
+          </ul>
+        </section>
 
-    <section>
-      <h2>Контакти</h2>
-      <p>
-        Email:
-        <a href="mailto:liubomyr.levytskyi.kb.2023@lpnu.ua">liubomyr.levytskyi.kb.2023@lpnu.ua</a>
-      </p>
-    </section>
-  </main>
+        <section class="resume-section">
+          <h3>Контакти</h3>
+          <p>Email: <a href="mailto:liubomyr.levytskyi.kb.2023@lpnu.ua">liubomyr.levytskyi.kb.2023@lpnu.ua</a></p>
+        </section>
+      </aside>
 
-  <footer>
-    <p>&copy; 2026 Любомир Левицький</p>
-  </footer>
+      <main class="cell bottom-right">
+        <section class="resume-section">
+          <h3>Досвід</h3>
+          <div class="entry mb-l">
+            <strong>Шаховий тренер (онлайн та офлайн)</strong>
+            <span class="subtext">2018 – Теперішній час</span>
+            <p>Я — кандидат у майстри спорту з шахів 🏅 та шаховий тренер з досвідом викладання. З 2018 року граю на
+              міжнародному рівні, брав участь у численних турнірах у класичних шахах, рапіді та бліці.</p>
+          </div>
+        </section>
+
+        <section class="resume-section">
+          <h3>Шахова кар'єра</h3>
+          <div class="entry">
+            <strong>Кандидат у майстри спорту (КМС) з шахів</strong>
+            <span class="subtext">Досягнення</span>
+            <p>Учасник та призер міжнародних турнірів. Постійно вдосконалюю навички через регулярні тренування та гру в
+              турнірах.</p>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
 </body>
 
 </html>
